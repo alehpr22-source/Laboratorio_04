@@ -6,10 +6,10 @@ Hacer los ambientes:
 - DEV : 4000
 - QA : 5000
 
-## Qué necesitas
+## Stack
 
 - Docker abierto
-- Terraform 1.5 o más nuevo
+- Terraform
 - Git
 
 ## Ambientes
@@ -56,4 +56,13 @@ Cómo comprobar que funciona
 docker ps
 curl http://localhost:4001
 curl http://localhost:4002
+curl http://localhost:4003
+
+curl http://localhost:5001
+curl http://localhost:5002
+
+curl http://localhost:5011
+curl http://localhost:5012
+
+curl http://localhost:5021
 ```
