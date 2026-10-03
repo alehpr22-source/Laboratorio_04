@@ -5,6 +5,7 @@ resource "docker_image" "frontend" {
 
 # Start a container
 resource "docker_container" "frontend" {
+  count = var.frontend_replicas[terraform.workspace]
   name  = "web-${terraform.workspace}-${count.index + 1}"
   image = docker_image.frontend.image_id
 

@@ -1,3 +1,13 @@
+variable "backend_replicas" {
+  type        = map(number)
+  description = "The number of backend replicas for each environment."
+}
+
+variable "frontend_replicas" {
+  type        = map(number)
+  description = "The number of frontend replicas for each environment."
+}
+
 variable "POSTGRES_USER" {
   type        = string
   description = "The username for the PostgreSQL database."

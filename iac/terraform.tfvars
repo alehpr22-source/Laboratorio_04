@@ -1,3 +1,9 @@
+frontend_replicas = {
+    dev = 1
+}
+backend_replicas = {
+    dev = 1
+}
 backend_port = {
     dev = 4002
 }

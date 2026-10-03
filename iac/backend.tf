@@ -7,8 +7,6 @@ resource "docker_image" "backend" {
 resource "docker_container" "backend" {
   count = var.backend_replicas[terraform.workspace]
   name  = "api-${terraform.workspace}-${count.index + 1}"
-  # version larga: name  = var.backend_replicas[terraform.workspace] > 1 ? 
-  # "api-${terraform.workspace}-${count.index + 1}" : "api-${terraform.workspace}"
   image = docker_image.backend.image_id
 
   ports {
