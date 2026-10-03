@@ -20,3 +20,8 @@ variable "backend_port" {
   type        = map(number)
   description = "The port which the backend will listen on for each environment."
 }
+
+variable "frontend_port" {
+  type        = map(number)
+  description = "The port which the frontend will listen on for each environment."
+}
